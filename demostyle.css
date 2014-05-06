@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'playball';
+    src: url('../fonts/playball-regular-webfont.eot');
+    src: url('../fonts/playball-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playball-regular-webfont.woff') format('woff'),
+         url('../fonts/playball-regular-webfont.ttf') format('truetype'),
+         url('../fonts/playball-regular-webfont.svg#playballregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	background-color: #f6f6f4;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Heiti SC", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: #ff6b6b;
+	overflow: hidden;
+}
+
+a {
+	color: white;
+}
+
+i {
+	color: white;
+	font-size: 1.5rem;
+}
+
+ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+li {
+	list-style: none;
+	margin: 0px;
+}
+
+h3 {
+	margin: 0.5em;
+	font-size: 150%;
+}
+
+h5 {
+	margin-bottom: 1%;
+}
+
+.lfloat {
+	float: left;
+}
+
+.rfloat {
+	float: right;
+}
+
+.mainWrapper {
+	overflow: hidden;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* LOADER */
+
+.loader {
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.loader span {
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    line-height: 3rem;
+    margin: -100px 0px 0px -100px;
+    padding: 0;
+    overflow: hidden;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.loader i {
+	font-size: 5rem;
+}
+
+/* LOADER END */
+
+/* HEADER */
+
+header {
+	height: 10%;
+	width: 100%;
+	background-color: white;
+ 	text-decoration: none;
+	text-align: center;
+	position: relative;
+	top: 0;
+}
+
+.navTitle {
+  font-size: 1.5rem;
+  font-family: 'Playball';
+  line-height: 200%;
+  color: #ff6b6b;
+  text-decoration: none;
+
+}
+
+#placeName {
+	display: none;
+}
+
+#twitter {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.container {
+	position: relative;
+	text-align: center;
+	height: 80%;
+}
+
+.contentWrapper {
+	width: 100%;
+	height: 80%;
+	position: relative;
+	overflow: hidden;
+	display: none;
+}
+
+.map {
+	width: 100%;
+	height: 100%;
+}
+
+#map-canvas {
+	width: 100%;
+	height: 100%;
+}
+
+#refresh {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.resultInfo {
+	text-align: center;
+	display: none;
+	width: 100%;
+	height: 100%;
+	line-height: 0.8;
+}
+
+.resultInfo img {
+	width: 30%;
+	margin-top: 2%;
+}
+
+.resultInfo a {
+	text-decoration: underline;
+	color: #35d4a4;
+}
+
+.resultInfo p {
+	margin-top: 1%;
+}
+
+.button {
+  display: inline-block;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  border-radius: 20rem;
+  border: 4px solid #b6f0de;
+  width: 13rem;
+  line-height: 13rem;
+  font-size: 2rem;
+  font-family: 'playball';
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #35d4a4;
+  vertical-align: baseline;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -110px;
+  margin-left: -105px;
+}
+
+.button a {
+	text-decoration: none;
+}
+
+
+/* RESULT OPTIONS */
+
+.rounded {
+	width: 44px;
+	z-index: 999;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 2px solid #4C5869;
+	text-align: center;
+	border-radius: 44px;
+}
+
+.rounded i {
+	font-size: 1.5rem;
+	line-height: 44px;
+	color: #4C5869;
+}
+
+.resultMenu {
+	width: 50%;
+	height: 100%;
+	float: left;
+	display: none;
+}
+
+.resultMenu i {
+	font-size: 1.5rem;
+}
+
+.resultMenuIcon {
+	position: absolute;
+	bottom: 25%;
+	right: 20%;
+}
+
+#mapShow {
+	display: none;
+}
+
+/* FOOTER */
+
+.footerMenu {
+	height: 10%;
+	width: 100%;
+	background-color: white;
+	position: relative;
+	bottom: 0;
+}
+
+.footerMenu i {
+	color: #ff6b6b;
+}
+
+footer li {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 5px;		
+}
+
+#optionHome {
+	width: 50%;
+	min-height: 100%;
+	float: left;
+}
+
+#optionHome i {
+	position: absolute;
+	bottom: 25%;
+	left: 20%;
+}
+
+
+@media (min-width: 321px) {
+
+	.navTitle {
+		font-size: 1.7rem;
+	}
+
+	.footerMenu i {
+		font-size: 1.7rem;
+	}
+}
+
+@media (min-width: 640px) {
+
+	.navTitle {
+		font-size: 2rem;
+	}
+
+	.footerMenu i {
+		font-size: 2rem;
+	}
+}
